@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2><u>Member details</u></h2>
+<p>{{ member }}</p>
+
+<ul>
+    <li>{{ member.id }}</li>
+    <li>{{ member.gender }}</li>
+    <li>{{ member.email }}</li>
+    <li>{{ member.phone }}</li>
+    <li>{{ member.membership_date }}</li>
+</ul>
+{% endblock %}
