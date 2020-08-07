@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+
+{% block content %}
+<h2><u>The list of members</u></h2>
+<br>
+{% for member in members %}
+
+<div>
+    <h3><a href="{% url 'member_detail' member.id %}">{{ member.firstname }} {{ member.lastname }} - ID#: {{ member.id }}</a></h3>
+
+</div>
+{% endfor %}
+
+
+{% endblock %}
